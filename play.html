@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="widt=device-width, initial-scale=1.0" />
         <title>Simon</title>
         <link rel="icon" href="myfavicon.ico" />
     </head>
@@ -17,24 +17,23 @@
                     <li><a href="about.html">About</a></li>
                 </menu>
             </nav>
-            <hr />
         </header>
 
         <main>
-            <h1>Welcome!</h1>
-            <p>Login to Play</p>
-            <form method="get" action="play.html">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Your name here" />
-                <button type="submit">Login</button>
-            </form>
-        </main>
-
-        <footer>
-            <hr />
-            <span class="text-reset">Author Name(s)</span>
+            <div class="players">
+                Player:
+                <span class="player-name">Mystery Player - Spooky</span>
+            </div>
             <br />
-            <a href="https://github.com/webprogramming260/simon-html">GitHub</a>
-        </footer>
+            <div>
+                <label for="count">Score</label>
+                <input type="text" id="count" value="----" readonly />
+            </div>
+            <br />
+            <div>
+                <button>Reset</button>
+            </div>
+            <br />
+        </main>
     </body>
 </html>
